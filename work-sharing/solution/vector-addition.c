@@ -1,3 +1,4 @@
+#include <omp.h>
 #include <stdio.h>
 
 #define NX 102400
@@ -13,6 +14,8 @@ int main(void)
         vecA[i] = 1.0 / ((double)(NX - i));
         vecB[i] = vecA[i] * vecA[i];
     }
+
+    printf("Program started\n");
 
     #pragma omp parallel for default(shared) private(i)
     for (i = 0; i < NX; i++) {
