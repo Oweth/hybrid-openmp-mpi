@@ -1,4 +1,4 @@
-This Project was just ptactice, I did not contribute to it.
+This Project was just practice, I did not contribute to it.
 
 # Hybrid CPU programming with OpenMP and MPI
 
